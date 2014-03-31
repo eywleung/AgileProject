@@ -1,0 +1,236 @@
+/* HTML5 block-level reset for enhanced structural tag support in older browsers */
+header, footer, section, aside, nav, article, figure { display: block; padding: 0; margin: 0; }
+
+html{overflow:-moz-scrollbars-vertical;overflow-y:scroll;}
+*{box-sizing:border-box;-moz-box-sizing:border-box;}
+ul{margin:0;padding:0;list-style-type:none;}
+a{color:#a6192e;text-decoration:none;}
+a img{border:none;}
+#page-content p a:hover,#page-content h1 a:hover,#page-content h2 a:hover,#page-content h3 a:hover,#page-content h4 a:hover,#page-content h5 a:hover,#page-content li a:hover,#page-content table a:hover,.breadcrumb a:hover{opacity:.8;}
+fieldset{border:none;}
+body{font:normal 100% Cambria,Georgia,"Times New Roman",Times,serif;line-height:1.5em;margin:0;background:#a6192e url(/BroadBasedAdmissions/_theme/_img/public/background.png) top left repeat;}
+@text Colour;.brand-font-italic{font-family:"DINWebItalic";}
+@font-face{font-family:'DINWebLight';src:url('/AgileProject/assets/font/DINWeb-Light.eot');src:url('/AgileProject/assets/font/DINWeb-Light.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-Light.woff') format('woff');}
+@font-face{font-family:'DINWeb';src:url('/AgileProject/assets/font/DINWeb.eot');src:url('/AgileProject/assets/font/DINWeb.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb.woff') format('woff');}
+@font-face{font-family:'DINWebBold';src:url('/AgileProject/assets/font/DINWeb-Bold.eot');src:url('/AgileProject/assets/font/DINWeb-Bold.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-Bold.woff') format('woff');}
+@font-face{font-family:'DINWebMedium';src:url('/AgileProject/assets/font/DINWeb-Bold.eot');src:url('/AgileProject/assets/font/DINWeb-Bold.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-Medium.woff') format('woff');}
+@font-face{font-family:'DINWebBlack';src:url('/AgileProject/assets/font/DINWeb-Black.eot');src:url('/AgileProject/assets/font/DINWeb-Black.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-Black.woff') format('woff');}
+@font-face{font-family:'DINWebLightItalic';src:url('/AgileProject/assets/font/DINWeb-LightIta.eot');src:url('/AgileProject/assets/font/DINWeb-LightIta.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-LightIta.woff') format('woff');font-weight:normal;font-style:italic;}
+@font-face{font-family:'DINWebItalic';src:url('/AgileProject/assets/font/DINWeb-Ita.eot');src:url('/AgileProject/assets/font/DINWeb-Ita.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-Ita.woff') format('woff');font-weight:normal;font-style:italic;}
+@font-face{font-family:'DINWebMediumItalic';src:url('/AgileProject/assets/font/DINWeb-MediumIta.eot');src:url('/AgileProject/assets/font/DINWeb-MediumIta.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-MediumIta.woff') format('woff');font-weight:normal;font-style:italic;}
+@font-face{font-family:'DINWebBoldItalic';src:url('/AgileProject/assets/font/DINWeb-BoldIta.eot');src:url('/AgileProject/assets/font/DINWeb-BoldIta.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-BoldIta.woff') format('woff');font-weight:bold;font-style:italic;}
+@font-face{font-family:'DINWebBlackItalic';src:url('/AgileProject/assets/font/DINWeb-BlackIta.eot');src:url('/AgileProject/assets/font/DINWeb-BlackIta.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/DINWeb-BlackIta.woff') format('woff');font-weight:bold;font-style:italic;}
+@font-face{font-family:'fontawesome';src:url('/AgileProject/assets/font/fontawesome.eot');src:url('/AgileProject/assets/font/fontawesome.eot?#iefix') format('embedded-opentype'),url('/AgileProject/assets/font/fontawesome.woff') format('woff'),url('/AgileProject/assets/font/fontawesome.ttf') format('truetype'),url('/AgileProject/assets/font/fontawesome.svg#fontawesome') format('svg');font-weight:normal;font-style:normal;}
+.icon{font-size:1em;line-height:1em;font-family:"fontawesome",sans-serif;font-weight:normal;}
+.icon-plus-sign:before{content:"+";}
+.icon-minus-sign:before{content:"-";}
+h1{font-size:2em;line-height:1.1em;font-family:"DINWebBold",sans-serif;font-weight:normal;margin-top:.9em;}
+.title h1{margin-top:12px;}
+h1 b,h1 strong{font-family:'DINWebBlack';}
+h1 i,h1 em{font-family:'DINWebBoldItalic';}
+h1 span{display:block;font-size:.5em;line-height:1.6em;font-family:"DINWebLight",sans-serif;font-weight:normal;text-transform:uppercase;letter-spacing:0;}
+h2{font-size:1.75em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;line-height:1.2;color:#777;margin-top:1em;margin-bottom:0;}
+h2 i,h2 em{font-family:'DINWebBoldItalic';}
+.section-heading h2{background-color:#3d3935;color:#fff;padding:.3em .2em .2em .4em;margin-bottom:.5em;}
+.colctrl h2{margin-top:.6em;margin-bottom:.5em;}
+h2 span{color:#3d3935;font-size:.5em;line-height:1.1em;text-transform:uppercase;font-family:"DINWebBold",sans-serif;}
+h3{font-size:1.1931818181818181em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;margin-bottom:1em;margin-top:1em;}
+.parsys_column .section:first-child h2:first-child{margin-top:-0.2em;}
+.parsys_column .section:first-child h3:first-child{margin-top:.2em;}
+.parsys_column .section:first-child p:first-child{margin-top:0;}
+h3 i,h3 em{font-family:'DINWebBoldItalic';}
+h4{font-size:.8em;line-height:1.125em;font-family:"DINWebBold",sans-serif;font-weight:normal;color:#888;text-transform:uppercase;font-weight:normal;margin-top:1em;padding-bottom:.6em;letter-spacing:.1em;}
+h5{font-size:.7em;line-height:1.125em;font-family:"DINWebBold",sans-serif;font-weight:normal;color:#ddd;font-weight:normal;margin-top:1em;padding-bottom:.6em;letter-spacing:.1em;}
+.ruled{border-top:10px solid #eee;padding-top:1em;}
+.ruled-below{border-bottom:10px solid #eee;padding-bottom:.5em;margin-bottom:1em;}
+.dotted-rule{border-top:1px dotted #ddd;padding-top:1em;}
+.dotted-rule-below{border-bottom:1px dotted #ddd;padding-bottom:.5em;}
+#container{width:90%;padding:0;margin:0 auto;max-width:1520px;}
+#page{background:#fff;box-shadow:0 0 15px rgba(50,50,50,0.75);}
+.toggle-search,.toggle-search-control{display:none;}
+header{position:relative;width:100%;background-color:#eee;background:-webkit-gradient(linear,left center,right center,from(#fff),to(#ddd));background:-moz-linear-gradient(left,#fff 0,#ddd 100%);float:left;padding-bottom:14px;padding-top:16px;border-top:5px solid #003087;}
+header fieldset{border:none;padding:0;width:100%;}
+.heading{float:left;width:77.7777%;padding-top:93px;position:relative;}
+.brand-title{position:absolute;top:0;left:0;}
+.branding{width:300px;height:46px;background:transparent url(/BroadBasedAdmissions/_theme/_img/public/beedie-logo.png) top left no-repeat;background-size:contain;}
+.brand-title>a{width:300px;display:block;}
+.branding h1{display:none;}
+.site-title{color:#3d3935;clear:left;margin-left:90px;}
+.site-title h2{font-family:"DINWebMedium";font-size:1.4em;margin:0;padding:0;margin-top:12px;}
+.site-title h3{font-size:.65em;line-height:1em;font-family:"DINWeb",sans-serif;font-weight:normal;text-transform:uppercase;letter-spacing:.1em;margin-bottom:0;padding-bottom:0;margin-top:10px;}
+.site-title h3+h2{margin-top:0;}
+.site-title a{color:#3d3935;}
+.actionable-header{font-size:.7428571428571429em;float:right;width:22.222222222%;padding-left:1.4619883%;position:absolute;bottom:0;right:0;padding-bottom:22px;}
+.actionable-header label,.actionable-header a{font-size:1em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;}
+.actionable-header input{font-size:.925em;font-family:"Lucida Grande",sans-serif;}
+.search-scope-set,.search-scope-set label{margin-top:0;}
+.search-scope-set input{margin-right:.5em;}
+.sf-menu{font-size:.8571428571428571em;padding-right:2%;position:absolute;top:30px;left:-160px;z-index:1;}
+.sf-menu li{text-transform:uppercase;letter-spacing:.1em;float:left;width:auto;padding-left:1em;}
+.sf-menu li:first-child{border-left:none;}
+.sf-menu a{color:#3d3935;}
+.sf-menu ul{background-color:#fff;}
+.mobile-global-links-container{display:none;}
+.expanded a{font-family:"DINWebMedium",sans-serif;}
+.header-divider{clear:left;height:25px;width:100%;background:#3d3935 url(/BroadBasedAdmissions/_theme/_img/public/bg_banner.png) -70px 0 no-repeat;}
+.search{position:relative;z-index:999;}
+.search form{background:none;border:none;margin:0;padding:0;}
+.search .search-field{margin-top:0;}
+.search .search-field input{width:85%;padding:6px;box-shadow:inset 2px 2px 5px #ccc;border:1px solid #b8b8b8;}
+.search fieldset{margin-bottom:4px;}
+.search-scope-set label{display:inline;}
+.search-scope-set label input{display:inline;float:none;}
+.first-col{float:left;width:22.222222222%;}
+.nav-control{display:none;}
+.default-nav{font-size:.8571428571428571em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;text-transform:uppercase;border-bottom:14px solid #777;margin-bottom:20px;padding-bottom:70px;border-top:15px solid #777;background:#3d3935 url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/bg-textured.png) 0 0 repeat;}
+.default-nav .top.active>ul{display:block;}
+.default-nav a{display:block;padding:8px 5px 8px 12px;}
+.default-nav ul>li>a{color:#fff;}
+.default-nav li{background:#161513;border-bottom:1px solid #555;}
+.default-nav li:first-child{border-top:1px solid #aaa;}
+.main-nav li.nav-item-expanded>a,.default-nav li.nav-item-expanded>a{color:#e0d10a;}
+.default-nav nav ul ul{display:block;}
+.default-nav>ul>li>ul>li a{background-color:#ddd;color:#000;text-transform:none;padding-left:21px;}
+.default-nav>ul>li>ul>li a:hover{color:#000;background-color:#eee;}
+.default-nav>ul>li>ul>li{border:none;}
+.default-nav>ul>li.active{background-color:#333;}
+.default-nav>ul>li.active>a{color:#e0d10a;}
+.default-nav li.active li{border:none;}
+.default-nav ul .top.active .active ul{display:block;}
+.default-nav>ul>li>ul>li>ul{padding-left:12px;padding-top:4px;background-color:#fafafa;}
+.default-nav>ul>li>ul>li.active>a{color:#3d3935;font-size:1em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;background-color:#ccc;}
+.default-nav>ul>li>ul>li.active li a{font-size:1em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;background-color:#fafafa;padding-left:8px;}
+.default-nav>ul>li>ul>li.active>ul>li.active>a{color:#a6192e;font-size:1em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;}
+.default-nav>ul>li>ul>li.active>ul>li.active>ul>li a{padding-left:16px;}
+.default-nav>ul>li>ul>li.active>ul>li.active>ul>li.active a{color:#3d3935;font-size:1em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;}
+.default-nav>ul>li>ul>li.active li:hover{background-color:transparent;}
+.default-nav .top.active>ul>li:first-child{display:none;}
+.default-nav li.rule{border-top:1px solid #fff;}
+.below-nav{padding-left:12px;}
+.main-nav .sub-menu{display:none;padding-left:16.6666667%;}
+#page-content{width:100%;float:left;padding:0;background-color:#fff;box-shadow:0 0 15px rgba(50,50,50,0.75);}
+.breadcrumb{font-size:.875em;line-height:1.3125em;font-weight:normal;padding-top:20px;float:left;padding-left:2.1929825%;padding-right:3.6549708%;width:77.77778%;}
+.main{padding-left:2.1929825%;padding-right:3.6549708%;padding-top:25px;float:left;width:77.77778%;padding-bottom:20px;}
+.three-column .main{width:55.55556%;padding-right:2.1929825%;}
+.no-navigation .main{width:100%;}
+.three-column.no-navigation .main{width:77.77778%;}
+.mobile-sub-menu{display:none;}
+.sub{padding-top:25px;width:22.222222%;float:left;padding-right:2.1929825%;padding-bottom:20px;}
+.section .mobile,.section .tablet,.section img.mobile+br,.section img.tablet+br{display:none;}
+.deptNews{border:1px solid #ddd;padding:1.5em;margin-bottom:6%;box-shadow:inset 0 0 10px 1px #ddd;}
+.intro p{font-size:1.1em;line-height:1.6em;margin-top:0;}
+.toggle{display:inline-block;background:url("/content/dam/sfu/images/icons/content-toggle-icon.png") 0 4px no-repeat;padding-left:20px;cursor:pointer;margin-top:1%;}
+.toggle p,.toggle h1,.toggle h2,.toggle h3,.toggle h4,.toggle h5{padding-bottom:0;padding-top:0;margin-top:0;margin-bottom:.5em;}
+.toggleContent{padding-left:2%;border-left:5px solid #ddd;}
+.toggleContent p:first-child{margin-top:1%;}
+table th{text-align:left;vertical-align:bottom;border-bottom:1px solid #999;}
+table td,table th{padding:.25em .5em;}
+.alternate table{border-bottom:1px solid #ddd;}
+.alternate table tr:nth-child(odd){background-color:#eee;}
+.category+.title h1{margin-top:0;margin-bottom:1%;padding-top:0;}
+.marginTop{margin-top:2em;}
+.marginBottom{margin-bottom:2em;}
+footer{color:#aaa;padding-left:10.4%;padding-top:18px;padding-bottom:18px;clear:left;float:left;font-size:.75em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;background-color:#3d3935;width:100%;}
+footer section:last-child{margin-left:2%;}
+footer a,footer a:hover{color:#fff;}
+footer li.header a{color:#e0d10a;}
+footer ul{margin-top:8px;float:left;padding-right:6%;list-style: none;}
+footer ul:last-child{font-size:.9em;line-height:.9em;}
+footer li{margin:0;padding:0;}
+footer li>a{display:inline-block;margin:0 0 4px 0;}
+footer li.header a{margin-bottom:0;}
+footer li.header{font-size:.8181818181818181em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;color:#e0d10a;text-transform:uppercase;padding-bottom:8px;}
+footer li.header ul li{background-image:none;}
+footer address{font-style:normal;}
+.connect-with-us .text p,.contact-us .text p{margin-top:0;}
+.connect-with-us .text ul{list-style-type:none;margin-top:0;}
+.connect-with-us .text ul li{padding-left:0;background:none;}
+.cq-image-placeholder{display:none;}
+@media(max-width:980px){header{transition:margin-top .5s;-moz-transition:margin-top .5s;-webkit-transition:margin-top .5s;-o-transition:margin-top .5s;margin-top:0;}
+.heading{width:100%;}
+.reveal-search{transition:margin-top .5s;-moz-transition:margin-top .5s;-webkit-transition:margin-top .5s;-o-transition:margin-top .5s;margin-top:70px;}
+.toggle-search-control{position:absolute;top:0;right:0;z-index:1;display:block;background:#003087 url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/search-icon@2x.png) 4px 5px no-repeat;background-size:21px 25px;text-indent:-999em;width:21px;border:none;cursor:pointer;margin-top:0;margin-right:6%;padding:10px 16px;}
+.actionable-header{float:none;height:70px;position:absolute;top:-75px;left:0;background-color:#485881;color:#fff;width:100%;padding:8px 2% 12px 2%;}
+.actionable-header .search{float:left;width:48%;margin-right:2%;}
+.search .search-field input{width:100%;border-radius:5px;box-shadow:none;}
+.search label{margin-bottom:0;padding-bottom:0;color:#fff;font-size:1em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;}
+.branding{width:300px;margin-top:16px;}
+header{position:relative;padding-top:0;padding-bottom:20px;}
+.header-image{display:none;}
+.global-links .sf-menu{display:none;}
+.global-links{position:static;margin-top:8px;float:left;width:50%;}
+.mobile-global-links-container{color:#fff;display:block;margin-top:-7px;}
+.mobile-global-links a{color:#fff;padding:.85em 1em .5em 1em;display:block;font-size:.9em;line-height:1.3125em;font-family:"DINWebLight",sans-serif;font-weight:normal;text-transform:uppercase;letter-spacing:.1em;}
+.mobile-global-links li.header{float:left;margin-left:2%;text-shadow:0 1px 1px rgba(0,0,0,0.3);background-color:#003087;border-radius:.5em;box-shadow:0 1px 2px rgba(0,0,0,0.2);}
+.mobile-global-links li.header ul{background-color:#4A6AA4;opacity:0;height:0;overflow:hidden;-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-ms-transition:all .1s linear;-0-transition:all .1s linear;transition:all .1s linear;}
+.mobile-global-links li.header ul.revealed{padding-top:8px;opacity:1;height:100%;}
+.mobile-global-links li.header ul:target{opacity:1;height:75px;-webkit-transition:all 1s linear;-ms-transition:all 1s linear;-moz-transition:all 1s linear;-0-transition:all 1s linear;transition:all 1s linear;}
+.main,.three-column .main{width:77.77777778%;padding-top:1.4619883%;}
+.sub,.three-column .sub{margin-left:22.2222222%;width:77.77777778%;padding-left:2.192825%;clear:left;}
+.no-navigation .main{width:100%;}
+.three-column.no-navigation .main{width:100%;}
+.three-column.no-navigation .sub{width:100%;margin-left:0;}
+footer{padding:2.1929825%;}
+footer ul{margin-bottom:20px;}
+.section .tablet,.section img.tablet+br{display:block;}
+.section .tablet.toggle{display:inline-block;}
+}
+@media(max-width:768px){#container{width:100%;}
+header{padding-bottom:20px;}
+.site-title h2{font-size:1.2em;line-height:1em;}
+.header-divider{height:33px;overflow:hidden;}
+fieldset.search-field{float:none;}
+.first-col{width:100%;position:relative;}
+.main-nav,.default-nav{float:none;width:100%;min-height:0;margin-bottom:0;border-top:1px solid #ddd;border-bottom:none;padding-top:0;padding-bottom:0;}
+.main-nav{position:relative;}
+.nav-control{display:block;width:100%;position:absolute;top:-35px;overflow:hidden;height:35px;}
+.main-nav,.default-nav{border-top:0;}
+.main-nav a,.default-nav a{padding-top:10px;}
+.default-nav{box-shadow:none;}
+.default-nav li:first-child{border-top:none;}
+.default-nav .top.active>ul li:first-child{display:block;}
+.nav-revealed{background:#3d3935 url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon@2x.png) 5px 9px no-repeat;background-size:21px 72px;}
+.nav-revealed:hover{background:#555 url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon@2x.png) 5px 9px no-repeat;background-size:21px 72px;}
+.main-nav button,.default-nav button{background:#fff url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon@2x.png) 5px -46px no-repeat;background-size:21px 72px;text-indent:-999em;width:21px;border:none;cursor:pointer;margin-right:6%;padding:9px 16px 11px 16px;float:right;}
+.main-nav button:hover,.default-nav button:hover{background-color:#3d3935;background-position:5px -18px;}
+.main-nav a{display:block;color:#fff;padding:10px 0 5px 12px;}
+.main-nav ul,.default-nav ul{display:none;}
+.main-nav ul ul,.default-nav ul ul{display:none;}
+.main-nav>ul>li>ul,.default-nav>ul>li>ul{display:none;}
+.default-nav>ul>li{background-color:#3d3935;}
+.main-nav>ul>li>ul>li.active>a{color:#3d3935;font-size:1em;line-height:1.3125em;font-family:"DINWebBold",sans-serif;font-weight:normal;background-color:#ccc;}
+nav>ul>li.nav-item-expandable{cursor:pointer;background:#3d3935 url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/nav-plus-minus@2x.png) 94% -16px no-repeat;background-size:23px 39px;}
+nav>ul>li.nav-item-expanded{background-position:94% 10px;}
+.default-nav li:last-child{border-bottom:none;}
+.default-nav li.rule{border-top:none;}
+.breadcrumb{width:100%;float:none;}
+.main,.three-column .main{clear:left;width:100%;padding-bottom:16px;padding-right:2.1929825%;}
+.mobile-sub-menu{display:block;margin-top:8px;padding-left:2.1929825%;}
+.mobile-global-links li.header ul{width:inherit;}
+.below-nav{padding:2.1929825%;}
+.section .desktop,.section img.desktop+br{display:none;}
+.section .mobile,.section img.mobile+br{display:block;}
+.section .mobile.toggle{display:inline-block;}
+.sub,.three-column .sub{width:100%;margin-left:0;padding-left:2.1929825%;}
+footer{font-size:1em;line-height:1.3125em;font-family:"DINWeb",sans-serif;font-weight:normal;}
+footer ul{width:25%;}
+footer ul:last-child{width:100%;}
+}
+@media(max-width:480px){.branding{background-size:cover;width:100px;}
+.brand-title>a{width:95px;}
+.site-title{margin-left:10px;}
+.actionable-header .search{width:40%;}
+fieldset.search-scope-set{font-size:.9em;width:120%;}
+.mobile-global-links li.header ul{font-size:.9em;}
+.mobile-global-links li.header span{display:none;}
+footer ul{width:50%;}
+footer ul:nth-child(3),footer ul:last-child{clear:left;}
+table td,table th{padding:.125em .25em;}
+}
+@media(-webkit-min-device-pixel-ratio:1.25),(min-device-pixel-ratio:1.25),(min-resolution:96dpi){.branding{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/sfu-logo@2x.png);}
+}
+.ext-ie6 .toggle-search-control,.ext-ie7 .toggle-search-control,.ext-ie8 .toggle-search-control{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/search-icon.png);}
+.ext-ie6 .nav-revealed,.ext-ie7 .nav-revealed,.ext-ie8 .nav-revealed{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon.png);}
+.ext-ie6 .nav-revealed:hover,.ext-ie7 .nav-revealed:hover,.ext-ie8 .nav-revealed:hover{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon.png);}
+.ext-ie6 .main-nav button,.ext-ie7 .main-nav button,.ext-ie8 .main-nav button,.ext-ie6 .default-nav button,.ext-ie7 .default-nav button,.ext-ie8 .default-nav button{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/menu-icon.png);}
+.ext-ie6 .main-nav>ul>li.nav-item-expandable,.ext-ie7 .main-nav>ul>li.nav-item-expandable,.ext-ie8 .main-nav>ul>li.nav-item-expandable,.ext-ie6 .default-nav>ul>li.nav-item-expandable,.ext-ie7 .default-nav>ul>li.nav-item-expandable,.ext-ie8 .default-nav>ul>li.nav-item-expandable{background-image:url(http://www.sfu.ca/etc/designs/clf/clientlibs/clf/source/images/nav-plus-minus.png);}

@@ -1,0 +1,438 @@
+/* =RESET
+-----------------------------------------------------------------------------------------------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}body{line-height:1;color:black;background:white}table{border-collapse:separate;border-spacing:0}/* tables still need 'cellspacing="0"' in the markup */caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}
+
+
+/* =GENERAL
+-----------------------------------------------------------------------------------------------*/
+	
+	body{ 
+		background:#a7a8a0;		
+		font: 12px Arial, sans-serif; 
+		line-height:1.3em;
+		color:#000;
+		margin: 0;
+		padding: 0;
+	}
+	
+		/* =headings
+		-------------------------------------------------------------- */
+		
+		h1,h2,h3,h4,h5,h6{ color:#b5111b; line-height:1.3em;}
+		
+		h1{ font-size:1.8em; line-height:1.4em; margin-bottom:16px; color:#54534a;}
+		h2{ font-size:1.6em; margin-bottom:12px; }
+		h3{ font-size:1.4em; margin-bottom:8px;  }
+		h4{ font-size:1.2em; margin-bottom:8px;  }
+		h5{ font-size:1em; margin-bottom:8px;  }
+		h6{ font-size:1em; margin-bottom:8px;  }
+		
+		p#site-title {
+			font-size:2em; line-height:1.4em; margin-bottom:16px; color:#54534a; font-family: "Lucida Grande",Lucida,Arial,Verdana,sans-serif;
+		}
+		p#site-title a{
+			text-decoration: none;
+			color: #54534a;
+		}
+		
+		h1#page-title {
+			color: #b5111b;
+		}
+		
+		
+		/* =text-elements
+		-------------------------------------------------------------- */
+		
+		a{ text-decoration:none; color:#0054a6; }
+		a:hover{ text-decoration:underline;  }
+		h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,h5 a:hover, h6 a:hover{ text-decoration:none; }
+		a img{ border:none; }
+		
+		strong{ font-weight: bold; color:#000; }
+		em{ font-style: italic; }
+		
+		p, ul, ol, pre, code{ margin-bottom:10px; }
+		
+		ul{ list-style-type:disc; list-style-position: outside; }		
+		ol{ list-style-type:decimal; list-style-position:inside; }
+		
+		blockquote{ padding:5px 20px 5px 60px; line-height:24px; }				 
+					 
+		pre, code{ border:1px solid #efefef; border-left-width:5px; display:block; padding:10px; font-size:11px; font-family: monospace; background-color:#f5f5f5; }
+		
+		hr{ border:none; height:1px; margin:20px 0; background-color:#efefef; color:#efefef; }
+		
+			/* due to IE <HR> margin bugs I had to made classed and apply them to div to achieve the effect of a <HR> */
+			
+			.hr{ border-top:1px solid #efefef; margin:30px 0; }
+			.hr-alt{ border-top:1px solid #efefef; margin:30px -30px 30px -30px; } 																	      
+			.hr-alt2{ border-top:1px solid #efefef; margin:0 0 30px 0; }																	  
+			
+			
+		/* =tables
+		-------------------------------------------------------------- */
+		
+		table{ border-collapse:separate; border-spacing:0; border-top-width:5px; margin-bottom:20px; border:0px solid #efefef;  }
+		th{ padding:10px 5px; text-transform:uppercase; font-weight:bold; }
+		td{ padding:5px; border-top:1px solid #efefef; }
+		tr.alt{ background-color:#f5f5f5; }
+		
+
+/* =GENERAL LAYOUT: Header, Menu, Footer
+-----------------------------------------------------------------------------------------------*/
+
+#wrapper {
+	width: 800px; /* 980-180 = 795 */
+	padding: 0 0 0 180px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-top:  5px solid #2e3192;
+	background-image: url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/version7_background.gif);
+	background-repeat: repeat-y;
+	-moz-box-shadow:0 -5px 5px 0 #333; 
+	-webkit-box-shadow:0 -1px 10px 0 #333; 
+	box-shadow:0 -1px 10px 0 #333;
+}
+#header {
+	background-color: #6c6e64;
+	width: 955px;
+	margin-left: -180px; /*Adjust for the Wrapper's padding */
+	border-left: 25px solid #a43e31;
+	height: 70px;
+	background-image: url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/header_banner.gif);
+	background-repeat: no-repeat;
+	background-position: 490px;
+}
+#header_links {
+	background-color: #b5111a;
+	height: 40px;
+	width: 915px;
+	margin-left: -180px; /*Adjust for the Wrapper's padding */
+	border-left-width: 25px;
+	border-left-style: solid;
+	border-left-color: #cb5a60;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-left: 40px;
+	padding-top: 5px;
+	overflow:hidden;
+}
+#header_links a {
+	color:#ffffff;
+	padding-bottom: 8px;
+	text-decoration:none;
+}
+#header_links a:hover{
+	color:#ffffff;
+	padding-bottom: 8px;
+	text-decoration:none;
+	border-bottom: #cb5a60 solid 15px;
+}
+#header_links .divider {
+	color:#cb5a60;
+}
+#header_links .search {
+	display:inline;
+}
+#header_links .search input {
+	position: relative;
+	display: inline;
+	margin: 0;
+	padding: 2px;
+	width: 100px;
+	overflow: hidden;
+	border: #aaa 1px solid;
+}
+ul#menu {
+	float: left;
+	display: inline;
+	margin-left: -155px; /*Adjust for the Wrapper's padding */
+	width: 155px; /* With padding, the width of the menu is 140px */
+	line-height: 14px;
+}
+ul#menu br, .ieNeedsThisAndIHATEit, .ieHack {
+	display: none;
+}
+ul#menu li {
+	list-style: none;
+	list-style-position: outside! important; /*ie7 fix*/
+}
+ul#menu li.underline {
+	border-bottom: 1px solid #666666;
+}
+ul#menu li.current {
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_red.gif);
+	background-repeat: repeat-x;
+	background-color: #b5111b;
+	margin-left: -25px;	
+}
+ul#menu li.socialmedia {
+	margin-top: 5px;
+	background-color: #0054a6;
+	margin-left: -25px;	
+}
+ul#menu li.socialmedia.twitter { 
+	background-color: #589ab9; 
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_twitter.gif);
+	background-repeat: repeat-x;
+}
+ul#menu li.socialmedia.facebook { 
+	background-color: #3b5998;
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_facebook.gif);
+	background-repeat: repeat-x;
+}
+ul#menu li.socialmedia.youtube { 
+	background-color: #fb2e3a; 
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_youtube.gif);
+	background-repeat: repeat-x;
+}
+ul#menu li.socialmedia.flickr { 
+	background-color: #0063dc;
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_flickr.gif);
+	background-repeat: repeat-x;
+}
+ul#menu li.socialmedia.rss { 
+	background-color: #f9a346; 
+	background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/menu_background_rss.gif);
+	background-repeat: repeat-x;
+}
+ul#menu li a {
+	display: block;
+	padding: 3px 5px 3px 10px;
+	line-height: 1.25em;
+	text-decoration: none;
+	color: #000000;
+	
+}
+ul#menu li.current a {
+	color: #fff;
+	border-right: solid 5px #54534a;
+	padding: 3px 0px 3px 35px; /*Remove 5px from the right for the border */
+}
+ul#menu li.socialmedia a {
+	color: #fff;
+	border-right: solid 5px #54534a;
+	padding: 3px 0px 3px 35px; /*Remove 5px from the right for the border */
+}
+ul#menu li a:hover {
+	border-right: solid 5px #54534a;
+	padding: 3px 0px 3px 10px; /*Remove 5px from the right for the border */
+}
+ul#menu li a.img:hover {
+	border-right: none;
+	padding: 3px 5px 3px 10px;
+}
+ul#menu li.current a:hover {
+	padding: 3px 0px 3px 35px;
+}
+ul#menu li.socialmedia a:hover {
+	padding: 3px 0px 3px 35px;
+}
+
+#content {
+	float: left;
+	padding: 20px;
+}
+
+#content ul {
+	padding: 1em;
+	margin: 0;
+}
+
+#introImg {
+	float: left;
+	padding: 0px;
+	background-color: #c9c9c9;
+	height: 300px;
+}
+
+#footer {
+	width: 980px;
+	margin-left: -180px; /*Adjust for the Wrapper's padding */
+	padding: 5px 0;
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #c7c8c3;
+	text-align: center;
+	clear: both;
+}
+#footer a {
+	color:#ffffff;
+	text-decoration:none;
+}
+/* =GRID
+-----------------------------------------------------------------------------------------------*/
+
+/* Clear Fix Hack - add  class="fixed"  to div's that have floated elements in them */
+.fixed:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.fixed{display:block;}
+/*  \*/
+.fixed{min-height:1%;}
+* html .fixed{height:1%;}
+		
+.row{ width:760px;} /* This grid has 4 columns of 175px each. Space between the columns is 20px. */
+	
+	.col-760{ width:760px; float:left; margin-right:0px; }
+	.col-565{ width:565px; float:left; margin-right:20px; }
+	.col-370{ width:370px; float:left; margin-right:20px; }
+	.col-240{ width:240px; float:left; margin-right:20px; } /*Width of 3 column layout*/
+	.col-175{ width:175px; float:left; margin-right:20px; } /*Width of 4 column layout*/
+		
+#introImg .row{ width: 800px; height: 300px}
+
+	#introImg .row .col-img{ width:595px; float:left; }
+	#introImg .row .col-text{ width:165px; float:left; padding: 20px 20px 20px 20px}
+	#introImg .row .col-img img { display: block; }
+	#introImg .row.slideshow-container{ position:relative; z-index:5; }  /* menu showing below the slider bug */
+
+.last	{ margin-right:0px; }
+.margin-bottom { margin-bottom: 20px; }
+.clear	{ clear:both; }
+.block	{ display:block; }
+.hide	{ display: none; }
+
+/* =TAB MENU
+-----------------------------------------------------------------------------------------------*/
+
+div.submenu{ width: 800px; }
+
+/* level 1 menu */
+ul#submenu{  float:left; list-style:none; border-bottom: solid #54534a 1px; width: 100%; margin: 0 0 25px 0; padding: 0;}		  
+ul#submenu li{ float: left;}
+ul#submenu li a{ 
+	display: block; 
+	padding:7px 10px 5px 10px; 
+	margin: 0 1px; 
+	text-transform:none; 
+	text-decoration: none;
+	text-align: center;
+	line-height: 12px;
+	color:#54534a;
+	
+	border: solid #54534a 1px; 
+	border-bottom: none; 
+	
+	-moz-border-top-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -khtml-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    
+    -moz-border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -khtml-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+}			   
+ul#submenu li.hover, ul li:hover{ position: relative; }
+ul#submenu li.hover a{ text-decoration:none; background-color: #54534a; color: #fff;} /* styleing when hovering on menu item a */					 
+ul#submenu li.current > a{ color:#b5111b; }							   
+ul#submenu li ul li a{ color:#252525; }							   
+
+/* level 2 menu */
+ul#submenu ul{ position:absolute; top:100%; left:0; width:150px; list-style:none; display:none; 
+					  border:1px solid #efefef; border-bottom:none; background-color:#ffffff; z-index:35; }				 
+ul#submenu ul li{ width:150px; }				
+ul#submenu li.hover ul li a{ width:130px; display: inline-block; border:none; padding:5px 10px; text-transform:none; text-align:left;
+						  font-weight:normal; font-size: 11px; border: none; border-bottom:1px solid #efefef; 
+						  background-color: #fff; color:#54534a; 
+						  -moz-border-radius: 0;
+						  -webkit-border-radius: 0;
+						  -khtml-border-radius: 0;
+						  border-radius: 0;
+} /* IE 6 and 7 Needs Inline Block */			  
+ul#submenu li.hover ul li a:hover{ background-color:#f5f5f5; color: #54534a;} 
+
+/* level 3 menu */
+ul#submenu ul ul{ left:100%; top:-1px; }
+ul#submenu li:hover > ul{ visibility:visible; }
+
+
+/* =MAIN PAGE
+-----------------------------------------------------------------------------------------------*/
+
+h1#tagline {
+	font-style: italic;
+	margin: 0 20px 0 0;
+	text-align: center;
+}
+
+#intro h2 {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+#intro p {
+	line-height: 16px;
+}
+
+h2#featured {
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 0 0px 0;
+}
+
+h2#featured a{
+	display: block;
+	background-color: #54534a;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+img#featured {
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+h2.section {
+	border-bottom: solid 1px #ccc;
+	color: #54534a;
+}
+
+h2.section a{
+	color: #54534a;
+}
+
+#contact h2 {
+	border-bottom: solid 1px #ccc;
+}
+#contact p {
+	margin-bottom: 5px;
+}
+
+#news h2 {
+	border-bottom: solid 1px #ccc;
+}
+#news UL {
+	padding: 0; margin: 0;
+}
+#news li {
+	list-style: none;
+	list-style-position: outside! important; /*ie7 fix*/
+	padding: 3px 0;
+	border-bottom: solid 1px #efefef;
+}
+
+/* =MAIN PAGE SLIDESHOW
+	-----------------------------------------------------------------------------------------------*/
+	
+	#slideshow-index{ position:relative; z-index:10; }
+	
+		#slideshow-index ul{ position:relative; width:800px; height:300px; overflow:hidden; margin-bottom:0; list-style:none; z-index:15; }
+		#slideshow-index ul li{ width:800px; height:300px; position:relative; }
+		#slideshow-index ul li img{ position:absolute; top:0; left:0; z-index:20; }
+		
+		#slideshow-index ul li .slidetext{ /*position:absolute; bottom:0; left:0; padding:10px 20px; width:555px; z-index:25; overflow:hidden;*/ display:none;
+		background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/bg-slider.png) repeat-x top left; }
+			.slidetext p{ margin-bottom:0; color:#fff; }								  
+			.slidetext a{ color:#fff; text-decoration:underline; }	
+			
+									
+	#index-slideshow-pager{ width:200px; text-align:right; z-index:35; position:absolute; right:20px; bottom:8px;  }
+	.ie7 #index-slideshow-pager{ bottom:15px; }								  
+	#index-slideshow-pager a{ text-align:left; background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/bg-pager.png) no-repeat 0 0; display:inline-block; 
+							 width:14px; height:14px; margin-left:1px; outline-style:none; text-indent:-9999px; }
+	#index-slideshow-pager .activeSlide{ background:url(https://beedie.sfu.ca/BroadBasedAdmissions/_theme/_img/_template/bg-pager.png) no-repeat 0 -64px; }
+	
+/* =MAIN PAGE
+-----------------------------------------------------------------------------------------------*/
+

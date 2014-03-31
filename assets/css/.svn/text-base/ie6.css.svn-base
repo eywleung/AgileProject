@@ -1,0 +1,12 @@
+ul#menu {
+	margin-left: -180px; /*Adjust for the Wrapper's padding */
+	width: 180px; /* With padding, the width of the menu is 140px */
+	/*background-color: #b5111b;*/
+}
+ul#menu li {
+	margin-left: 9px;
+	height: 90%;
+}
+ul#menu li.current, ul#menu li.socialmedia {
+	margin-left: -15px;
+}
